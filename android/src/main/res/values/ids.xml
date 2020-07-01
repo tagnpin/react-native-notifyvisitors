@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TODO: Notification Center RECYCLER VIEW-->
+    <item name="nv_recycler_view" type="id" />
+
+    <!--TODO: Notification Center ICON-->
+    <item name="nv_row_iconIV" type="id" />
+    <item name="nv_row_iconRL" type="id" />
+    <item name="nv_progressBar" type="id" />
+
+    <!--TODO: Notification Center DESCRIPTION-->
+    <item name="nv_row_descriptionLL" type="id" />
+
+    <!--TODO: Notification Center BIG IMAGE-->
+    <item name="nv_row_richIV" type="id" />
+    <item name="nv_richImagePB" type="id" />
+    <item name="nv_row_richRL" type="id" />
+
+    <!--TODO: Notification Center MAIN LAYOUT-->
+    <item name="nv_row_subMainLL" type="id" />
+
+    <!--TODO: Notification Center TIME-->
+    <item name="nv_row_timeTV" type="id" />
+    <item name="nv_row_timeRL" type="id" />
+
+    <!--TODO: Notification Center ACTION BUTTON-->
+    <item name="nv_row_actionBtnMainLL" type="id" />
+    <item name="nv_row_actionBtnDivider" type="id" />
+
+    <item name="nv_row_btnLL1" type="id" />
+    <item name="nv_row_abTV1" type="id" />
+    <item name="nv_row_btnIV1" type="id" />
+    <item name="nv_row_btnLL2" type="id" />
+    <item name="nv_row_abTV2" type="id" />
+    <item name="nv_row_btnIV2" type="id" />
+
+    <!--TODO: Notification Center LINE-->
+    <item name="nv_row_line" type="id" />
+
+    <!--TODO: Notification Center MESSAGE-->
+    <item name="nv_row_msgTV" type="id" />
+    <!--TODO: Notification Center TITLE-->
+    <item name="nv_row_titleTV" type="id" />
+
+    <!--TODO: Notification Center CARD VIEW-->
+    <item name="nv_row_cardView" type="id" />
+    <item name="nv_row_cardViewLL" type="id" />
+
+    <!--TODO: Notification Center SUMMARY-->
+    <item name="nv_row_summaryTV" type="id" />
+
+    <!--TODO: Notification Center COUPON-->
+    <item name="nv_row_couponTV" type="id" />
+
+
+    <item name="nv_gifIv" type="id" />
+    <item name="nv_thumbnail" type="id" />
+    <item name="nv_gifLL" type="id" />
+    <item name="nv_prevBtn" type="id" />
+    <item name="nv_nextBtn" type="id" />
+
+
+    <item name="tv" type="id" />
+</resources>

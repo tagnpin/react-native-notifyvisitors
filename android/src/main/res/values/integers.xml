@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--- start Notification Centre Action Bar -->
+    <integer name="nv_actionbarTitleFontSize">22</integer>
+    <integer name="nv_actionbarButtonSize">18</integer>
+<!--- end Notification Centre Action Bar -->
+
+<!--- start Notification Centre Header Content -->
+    <integer name="nv_headerTextFontSize">20</integer>
+
+<!-- Start Optional Settings -->
+    <integer name="nv_show_NC_header">1</integer>         <!--1 = yes and 0= no-->
+ <!-- end Optional Settings -->
+
+<!---  end Notification Centre Header Content -->
+
+<!--- start Notification Centre Notifications List Content -->
+    <integer name="nv_NC_stopSliderImagesClick">0</integer>   <!-- 1 means stop -->
+    <integer name="nv_center_cardview_borderWidth">1</integer>
+    <integer name="nv_center_cardview_borderRadius">10</integer>
+    <integer name="nv_center_cardview_radius">10</integer>
+    <integer name="nv_center_removeIcon_height">30</integer>
+    <integer name="nv_center_removeIcon_width">30</integer>
+    <integer name="nvCenterTitleFontSize">14</integer>
+    <integer name="nvCenterTimeFontSize">10</integer>
+    <integer name="nvCenter_push_Message_fontSize">14</integer>
+    <integer name="nvCenterSummaryFontSize">12</integer>
+    <integer name="nvCenterCouponCodeFontSize">14</integer> <!--16-->
+    <integer name="nv_center_cta_TextFontSize">13</integer>
+    <integer name="nv_center_cta_BtnIconSize">25</integer>
+<!--- end Notification Centre Notifications List Content -->
+
+<!--- start Notification Centre No Notifications Content -->
+    <integer name="nv_noNotificationMsgFontSize">20</integer>
+
+    <!-- Start Optional Settings -->
+        <!--<integer name="nv_show_NC_emptyImage">1</integer>-->      <!--1 = yes and 0= no-->
+        <!--<integer name="nv_emptyImageWidth">200</integer>-->
+        <!--<integer name="nv_emptyImageHeight">300</integer>-->
+    <!-- end Optional Settings -->
+
+<!--- end Notification Centre No Notifications Content -->
+
+<!--NV Gif Push Header-->
+    <integer name="nvShowHeaderCustomNotif">1</integer> <!-- 0->no, 1->yes -->
+
+<!--- NV_Sticky Push -->
+    <integer name="isIconTextVisible">1</integer> <!-- 1-> yes 0 -> no-->
+    <integer name="nvStickyIconsTextSize">9</integer> <!-- min-6 ,max-14-->
+
+<!--- NV_Geofence Push -->
+<!--<integer name="nv_blockGeofencePushForHours">0</integer>-->
+
+    <!--NV Event Scope-->
+    <integer name="nv_ShouldIncludeEventScopeValueLastDay">0</integer> <!-- 0 means false -->
+    <integer name="nv_gifAnimationDelay">900</integer>     <!-- range between 800ms to 3000ms -->
+
+
+</resources>

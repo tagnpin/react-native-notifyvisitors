@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!--- start Notification Centre Activity Status Bar -->
+    <color name="nv_statusBarColor"><!--#017bb0-->#000000</color>  <!-- 2A4955-->
+    <!--- end Notification Centre Activity Status Bar -->
+
+    <!--- start Notification Centre Action Bar -->
+    <color name="nv_actionbarTitleTextColor">#000000</color>
+    <color name="nv_actionbarButtonColor">#000000</color>
+    <!--- end Notification Centre Action Bar -->
+
+    <!--- start Notification Centre Header Content -->
+    <color name="nv_headerBgColor">#D7F0F5</color>
+    <color name="nv_headerTextColor">#696E79</color>
+    <color name="nv_headerBorderColor">#86D0D7</color>
+    <!---  end Notification Centre Header Content -->
+
+    <!--- start Notification Centre Notifications List Content -->
+    <color name="nv_center_contentBgColor">#ffffff</color>
+    <color name="push_small_icon_background">#a03844</color>
+    <color name="nv_center_push_titleColor">#000000</color> <!--#696E79-->
+    <color name="nv_center_push_messageColor">#848484</color>
+    <color name="nvCenterTimeColor">#94989F</color>
+    <color name="nv_center_pushSummaryColor">#94989F</color>
+    <color name="nv_center_coupon_codeColor">#000000</color>
+    <color name="nv_center_cta_firstBgColor">#ffffff</color>
+    <color name="nv_center_cta_first">#848484</color>
+    <color name="nv_center_cta_secondBgColor">#ffffff</color>
+    <color name="nv_center_cta_second">#848484</color>
+    <!-- <color name="nv_center_cta_first_IconTintColor">#ff0000</color>-->
+    <!--<color name="nv_center_cta_second_IconTintColor">#ff0000</color>-->
+    <color name="nv_center_cta_BtnDividerColor">#d3d3d3</color>
+    <color name="nv_center_iconBgColor">#EBEBEB</color>
+    <color name="nv_center_cardview_borderColor">#a1a5ab</color>  <!--#94989F-->
+    <color name="nv_center_lineAboveCTAColor">#d3d3d3</color>
+    <color name="nv_center_removeIconBg">#00ffffff</color>
+
+
+    <!--- end Notification Centre Notifications List Content -->
+
+
+    <!--- start Notification Centre No Notificatons Content -->
+    <color name="nv_emptyImageTintColor">#9C9C9C</color><!--#9C9C9C-->
+    <color name="nv_noNotificatioMsgColor">#9C9C9C</color>
+    <!--- end Notification Centre No Notificatons Content -->
+
+
+    <!--- START: NV_Sticky Push -->
+    <color name="nvStickyBgColorNotification">#FAFAFA</color> <!--default-#FAFAFA-->
+    <color name="nvStickyIconTextColor">#616161</color> <!-- defaultColor-#424242-->
+    <color name="nvStickyIconsColorFiler">#0000</color>
+    <color name="nvStickyLogoColorFilter">#0000</color>
+    <color name="nvStickyCloseBtnColorFilter">#0000</color>
+    <!--- END: NV_Sticky Push -->
+
+
+    <!-- START: NV_Rating_Push-->
+    <color name="nvRatingUnSelectColor">#A9A9A9</color>
+    <color name="nvRatingSelectColor">#DAA520</color>
+    <!-- END: NV_Rating_Push -->
+
+</resources>

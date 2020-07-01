@@ -1,0 +1,139 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.notifyvisitors.notifyvisitors">
+
+    <permission android:name="${applicationId}.notifyvisitors.custom.PERMISSION" />
+    <uses-permission android:name="${applicationId}.notifyvisitors.custom.PERMISSION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+<!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+<!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+<!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+<!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+<!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+<!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+<!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+
+<!-- for OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".inapp.FullScreenPopup"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".inapp.FullScreenPopupTranslucent"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        
+        <activity
+            android:name=".internal.TempActivity"
+            android:theme="@style/AlertDialogCustom" />
+
+        <receiver
+            android:name=".NVInstallReferrerReceiver"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name=".AppUpdateReceiver"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".push.PushIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        
+        <service
+            android:name=".CheckUpdateService"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+        
+        <service android:name=".geofence.GeofenceTransitionsIntentService" />
+        
+        <service
+            android:name=".push.PushDismissListener"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+        
+        <service
+            android:name=".push.crousel.UpdateCrouselPN"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+        
+        <service
+            android:name=".push.rate.UpdateRatingPN"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+        
+        <service
+            android:name=".push.StickyPN$StickyPushCloseReceiver"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+        
+        <service
+            android:name=".internal.OpenUrlService"
+            android:permission="${applicationId}.notifyvisitors.custom.PERMISSION" />
+
+        <activity
+            android:name=".center.NotificationsListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".internal.InAppRedirection"
+            android:theme="@style/AlertDialogCustom" />
+
+        <service android:name="com.notifyvisitors.notifyvisitors.NVFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+            
+    </application>
+
+</manifest>
+  
